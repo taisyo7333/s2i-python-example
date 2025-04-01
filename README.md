@@ -28,6 +28,12 @@ os status
 oc start-build s2i-python-example
 ```
 
+### How to delete the application
+
+```sh
+oc delete all -l app=s2i-python-example
+```
+
 ## Reference
 
 * [S2I Pytyon](https://docs.redhat.com/en/documentation/openshift_online/3/html-single/using_images/index#overview-4)
