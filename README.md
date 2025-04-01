@@ -5,8 +5,17 @@
 ### How to deploy application on Openshift using s2i
 
 ```sh
-oc new-app https://github.com/taisyo7333/s2i-python-example.git --strategy=source
+oc new-app https://github.com/taisyo7333/s2i-python-example.git
 ```
+
+If you want to use a particular image, see the below.
+
+```sh
+oc new-app registry.redhat.io/ubi8/python-312~https://github.com/taisyo7333/s2i-python-example.git
+```
+
+For Your Information
+If you want to use source strategy, use `--strategy=source`
 
 ### How to track BuildConfig's progres
 
