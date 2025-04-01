@@ -1,4 +1,4 @@
-# How to deploy source-to-image application
+# How to deploy an application using source-to-image 
 
 ## Getting started
 
@@ -8,7 +8,7 @@
 oc new-app https://github.com/taisyo7333/s2i-python-example.git
 ```
 
-If you want to use a particular image, see the below.
+If you want to use a particular image, see below.
 
 ```sh
 oc new-app registry.redhat.io/ubi8/python-312~https://github.com/taisyo7333/s2i-python-example.git
@@ -17,15 +17,15 @@ oc new-app registry.redhat.io/ubi8/python-312~https://github.com/taisyo7333/s2i-
 For Your Information
 If you want to use source strategy, use `--strategy=source`
 
-### How to track BuildConfig's progres
+### How to track BuildConfig's progress
 
-You will see the following message on yourteminal how to track its progress.
+You will see the following message on your teminal how to track its progress.
 
 ```sh
 oc logs -f buildconfig/s2i-python-example
 ```
 
-### How to see it's status
+### How to see its status
 
 ```sh
 os status
