@@ -1,4 +1,4 @@
-# Creating a basic S2I builder image
+# How to deploy source-to-image application
 
 ## Getting started
 
@@ -28,3 +28,12 @@ os status
 oc start-build s2i-python-test
 ```
 
+## Reference
+
+* [S2I Pytyon](https://docs.redhat.com/en/documentation/openshift_online/3/html-single/using_images/index#overview-4)
+* [S2I Requirements](https://docs.redhat.com/en/documentation/openshift_online/3/html-single/creating_images/index#overview-3)
+* [How to crate an S2I Builder Image](https://www.redhat.com/en/blog/create-s2i-builder-image)
+* [How to deploy application on Openshift](https://docs.redhat.com/en/documentation/openshift_online/3/html-single/developer_guide/index#dev-guide-index)
+* [GitHub - Source to Image](https://github.com/openshift/source-to-image)
+* [GitHub - s2i-python-container](https://github.com/sclorg/s2i-python-container/tree/master)
+* https://rheb.hatenablog.com/entry/running-s2i-locally
