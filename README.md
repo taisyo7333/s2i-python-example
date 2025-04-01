@@ -5,7 +5,7 @@
 ### How to deploy application on Openshift using s2i
 
 ```sh
-oc new-app https://github.com/taisyo7333/s2i-python-test.git --strategy=source
+oc new-app https://github.com/taisyo7333/s2i-python-example.git --strategy=source
 ```
 
 ### How to track BuildConfig's progres
@@ -13,7 +13,7 @@ oc new-app https://github.com/taisyo7333/s2i-python-test.git --strategy=source
 You will see the following message on yourteminal how to track its progress.
 
 ```sh
-oc logs -f buildconfig/s2i-python-test
+oc logs -f buildconfig/s2i-python-example
 ```
 
 ### How to see it's status
@@ -25,7 +25,7 @@ os status
 ### How to update the application
 
 ```sh
-oc start-build s2i-python-test
+oc start-build s2i-python-example
 ```
 
 ## Reference
